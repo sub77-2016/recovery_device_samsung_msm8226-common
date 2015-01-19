@@ -1,0 +1,9 @@
+#<src>                                                <mnt_point>  <type>  <mnt_flags and options>                     <fs_mgr_flags>
+/data         ext4      /dev/block/platform/msm_sdcc.1/by-name/userdata     flags=fsflags="inline_xattr"
+/cache        ext4      /dev/block/platform/msm_sdcc.1/by-name/cache
+/system       ext4      /dev/block/platform/msm_sdcc.1/by-name/system
+/boot         emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery     emmc      /dev/block/platform/msm_sdcc.1/by-name/recovery
+#/sdcard		vfat																			flags=symlink=/data/media/0
+/external_sd	vfat	/dev/block/mmcblk1p1   /dev/block/mmcblk1  flags=display="External SDcard";storage;wipeingui;removable
+/usb-otg      vfat      /dev/block/sda1   /dev/block/sda                    flags=display="USB OTG";storage;wipeingui;removable
